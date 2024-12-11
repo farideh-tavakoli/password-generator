@@ -76,6 +76,6 @@ class PinGenerator(PasswordGenerator):
         return ''.join([random.choice(string.digits) for _ in range(self.length)])
     
 
-if __name__ == '__main__':
-    p_obj = RandomPasswordGenerator()
-    print(p_obj.generate())
+#if __name__ == '__main__':
+#    p_obj = RandomPasswordGenerator()
+#    print(p_obj.generate())
