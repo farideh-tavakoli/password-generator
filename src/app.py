@@ -1,8 +1,12 @@
+import os
 import streamlit as st
-from src.main import PinGenerator, RandomPasswordGenerator, MemorablePasswordGenerator
+from main import PinGenerator, RandomPasswordGenerator, MemorablePasswordGenerator
 
 
-st.image("src/images/banner.jpeg", width=600)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+image_path = os.path.join(current_dir, "images", "banner.jpeg")
+
+st.image(image_path, width=600)
 st.title(":zap: Password Generator")
 
 option = st.radio(
